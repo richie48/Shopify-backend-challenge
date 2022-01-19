@@ -69,12 +69,10 @@ exports.deleteItem=async(req,res,err)=>{
 
 
 //filtering based on inventory count...
-
 exports.itemWithCount=async(req,res,err)=>{
     const quantity=req.params.qty
     try {
         const item = await Item.find(quantity);
-    
         res.status(200).json(item);
       } catch (error) {
         res.status(404).json({ message: error.message });
