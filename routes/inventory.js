@@ -1,14 +1,13 @@
 const express=require('express')
-const res = require('express/lib/response')
 
-const {createInventory,getAnInventory,
+const {createItem,getAnItem,
     getItem,
     deleteItem,
     updateItem}=require('../controllers/inventory')
 router=express.Router()
 
-router.route('/').get(getItem).post(createInventory)
-router.route('/id').delete(deleteItem).get(getAnInventory).put(updateItem)
+router.route('/').get(getItem).post(createItem)
+router.route('/:id').delete(deleteItem).get(getAnItem).put(updateItem)
 
 
 
