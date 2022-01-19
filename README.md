@@ -35,3 +35,17 @@ To build and start the app: npm run build
 4. View a list of them
 
 5. As the extra feature >> Filtering based on inventory count
+
+# REST API Documentation
+
+create item : POST /api/inventory/
+
+get an item : GET /api/inventory/{id}/
+
+get items : GET /api/inventory/
+
+Delete items : DELETE /api/inventory/{id}
+
+Update items : PUT /api/inventory/{id}/
+
+get items by quantity : GET /api/inventory/qty/{qty}
