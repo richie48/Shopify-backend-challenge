@@ -1,22 +1,22 @@
 
-exports.getInventories= async(req,res,err)=>{
-    res.send('gotten inventories')
+exports.getItem= async(req,res,err)=>{
+    res.send('gotten item')
 }
 
-exports.getAnInventory= async(req,res,err)=>{
-    res.send('gotten an inventory')
+exports.getAnItem= async(req,res,err)=>{
+    res.send('gotten an Item')
 }
 
-exports.createInventory=(req,res,err)=>{
-    res.send('created an inventory')
+exports.createItem=(req,res,err)=>{
+    res.send('created an Item')
 }
 
-exports.updateInventories=(req,res,err)=>{
-    res.send('updated inventories')
+exports.updateItem=(req,res,err)=>{
+    res.send('updated item')
 }
 
-exports.deleteInventories=(req,res,err)=>{
-    res.send('deleted inventories')
+exports.deleteItem=(req,res,err)=>{
+    res.send('deleted item')
 }
 
 
