@@ -34,4 +34,4 @@ To build and start the app: npm run build
 
 4. View a list of them
 
-5.As the extra feature >> Filtering based on inventory count
+5. As the extra feature >> Filtering based on inventory count
